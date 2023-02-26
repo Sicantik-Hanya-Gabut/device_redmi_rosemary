@@ -154,6 +154,15 @@ TARGET_COPY_OUT_VENDOR := vendor
 TARGET_COPY_OUT_PRODUCT := product
 TARGET_COPY_OUT_SYSTEM_EXT := system_ext
 
+BOARD_USES_METADATA_PARTITION := true
+
+# Platform
+TARGET_BOARD_PLATFORM := mt6785
+BOARD_HAS_MTK_HARDWARE := true
+
+# Power HAL Ext
+TARGET_POWERHAL_MODE_EXT := $(DEVICE_PATH)/power/power-ext.cpp
+
 # Properties
 TARGET_PRODUCT_PROP += $(DEVICE_PATH)/props/product.prop
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/props/system.prop
