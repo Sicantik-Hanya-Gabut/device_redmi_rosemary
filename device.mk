@@ -14,6 +14,8 @@ $(call inherit-product, vendor/redmi/rosemary/rosemary-vendor.mk)
 
 $(call inherit-product, vendor/mediatek/opensource/mtk-builds.mk)
 
+$(call inherit-product, vendor/redmi/rosemary-miuicamera/rosemary-miuicamera-vendor.mk)
+
 # Setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 
@@ -535,6 +537,11 @@ PRODUCT_TARGET_VNDK_VERSION := 32
 PRODUCT_PACKAGES += \
     vndservice_manager \
     vndservice_manager.vendor
+
+# Soong namespaces
+PRODUCT_SOONG_NAMESPACES += \
+    $(LOCAL_PATH) \
+    hardware/mediatek
 
 # Vibrator
 PRODUCT_PACKAGES += \
