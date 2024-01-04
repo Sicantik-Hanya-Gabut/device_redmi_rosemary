@@ -173,14 +173,15 @@ DEVICE_MANIFEST_SKUS += rosemary
 DEVICE_MANIFEST_ROSEMARY_FILES := $(DEVICE_PATH)/vintf/manifest_rosemary.xml
 
 # Recovery
-# Display
-TARGET_SCREEN_DENSITY := 440
 BOARD_USES_RECOVERY_AS_BOOT := true
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery/root/first_stage_ramdisk/fstab.mt6785
 TARGET_RECOVERY_UI_BLANK_UNBLANK_ON_INIT := true
 TARGET_USERIMAGES_USE_F2FS := true
 TARGET_USERIMAGES_USE_EXT4 := true
+
+# Display
+TARGET_SCREEN_DENSITY := 440
 
 # Sepolicy
 include device/mediatek/sepolicy_vndr/SEPolicy.mk
