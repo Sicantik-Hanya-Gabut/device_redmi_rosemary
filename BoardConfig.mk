@@ -88,7 +88,7 @@ BOARD_BOOTIMG_HEADER_VERSION := 2
 BOARD_KERNEL_IMAGE_NAME := Image.gz
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_SOURCE := kernel/redmi/rosemary
-TARGET_KERNEL_CONFIG := rosemary_defconfig
+TARGET_KERNEL_CONFIG := rad_defconfig
 TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_OPTIONAL_LD := true
 TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/kernel/$(HOST_OS)-x86/clang-r416183b
@@ -214,4 +214,4 @@ WIFI_HIDL_FEATURE_DUAL_INTERFACE := true
 WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 
 -include vendor/redmi/rosemary/BoardConfigVendor.mk
-include vendor/redmi/rosemary-firmware/BoardConfigVendor.mk
+include vendor/redmi/rosemary-firmware/config.mk
