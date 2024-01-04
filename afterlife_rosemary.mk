@@ -18,16 +18,20 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
+# Common target product config
+$(call inherit-product, vendor/afterlife/config/common_full_phone.mk)
+
 # Inherit device tree
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
-# Common PE configs
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+AFTERLIFE_BUILD_TYPE := COMMUNITY
+AFTERLIFE_MAINTAINER := ば|JUST|RAD
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
 TARGET_INCLUDE_STOCK_ARCORE := true
 TARGET_INCLUDE_LIVE_WALLPAPERS := true
 TARGET_SUPPORTS_CALL_RECORDING := true
 TARGET_USES_AOSP_RECOVERY := true
+WITH_GAPPS := true
 
 # Bootanimation
 TARGET_BOOT_ANIMATION_RES := 1080
