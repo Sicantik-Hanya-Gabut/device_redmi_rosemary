@@ -8,3 +8,4 @@ git clone https://github.com/Sicantik-Hanya-Gabut/device_mediatek_common device/
 git clone https://github.com/Sicantik-Hanya-Gabut/vendor_mediatek_interfaces vendor/mediatek/interfaces
 git clone https://github.com/Sicantik-Hanya-Gabut/android_device_mediatek_sepolicy_vndr device/mediatek/sepolicy_vndr
 git clone https://github.com/Sicantik-Hanya-Gabut/vendor_redmi_rosemary vendor/redmi/rosemary
+git clone https://github.com/chasbuilds/android_hardware_mediatek hardware/mediatek
