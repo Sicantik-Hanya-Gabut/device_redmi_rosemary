@@ -538,11 +538,6 @@ PRODUCT_PACKAGES += \
     vndservice_manager \
     vndservice_manager.vendor
 
-# Soong namespaces
-PRODUCT_SOONG_NAMESPACES += \
-    $(LOCAL_PATH) \
-    hardware/mediatek
-
 # Vibrator
 PRODUCT_PACKAGES += \
     android.hardware.vibrator-service.rosemary
